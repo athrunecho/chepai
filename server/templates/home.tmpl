@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' id='style-css'  href='static/css/jquery.mobile-1.4.5.min.css' media='all' />
+  <link rel='stylesheet' id='style-css'  href='static/css/zb.css' media='all' />
+  <script type="text/javascript" src="static/js/jquery-1.12.1.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="static/js/chepai.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="page1">
+  <div data-role="header">
+      <h1>{{ .Title }}</h1>
+  </div>
+
+  <div data-role="content">
+
+        <label for="ID">标号</label>
+        <input type="text" name="ID" id="ID">
+        </select>
+
+        <label for="password">密码</label>
+        <input type="password" name="password" id="password">
+        </select>
+
+        <button id="loginBtn">登录</button>
+  </div>
+</div>
+
+
+<div data-role="page" id="page2">
+  <div data-role="header">
+      <h1>{{ .Title }}</h1>
+  </div>
+
+  <div data-role="content">
+
+        <h2>公开信息</h2>
+
+         <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>本月牌照数量</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="license_plate_num"></p>
+          </div>
+        </div>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>拍卖开始时间</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="begin_time"></p>
+          </div>
+        </div>
+
+         <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>第一次出价结束时间</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="phase_one_end_time"></p>
+          </div>
+        </div>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>第二次出价结束时间</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="phase_two_end_time"></p>
+          </div>
+        </div>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>警示价</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="start_price"></p>
+          </div>
+        </div>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>参拍人数</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="bidder_num"></p>
+          </div>
+        </div>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>当前最低成交价</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="lowest_price"></p>
+          </div>
+        </div>
+
+        <h2>出价</h2>
+
+        <label for="price">出价</label>
+        <input type="text" name="price" id="price">
+
+	<button id="bidBtn">出价</button>
+
+        <div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>出价记录</h3>
+          </div>
+          <div class="ui-body ui-body-a" id="bid_records">
+          </div>
+        </div>
+
+	<div class="ui-corner-all custom-corners">
+          <div class="ui-bar ui-bar-a">
+            <h3>最终成交结果</h3>
+          </div>
+          <div class="ui-body ui-body-a">
+            <p id="result"></p>
+          </div>
+        </div>
+
+	<button id="resultBtn">查询</button>
+  </div>
+</div>

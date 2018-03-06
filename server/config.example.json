@@ -1,0 +1,11 @@
+{
+    "server_addr":":8000",
+    "redis_server":":6379",
+    "redis_pool_size":2000,
+    "redis_password":"",
+    "start_after":1,
+    "phase_one_duration":10,
+    "phase_two_duration":10,
+    "start_price":80000,
+    "license_plate_num":1000
+}

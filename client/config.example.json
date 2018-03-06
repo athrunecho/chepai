@@ -1,0 +1,5 @@
+{
+    "server_addr":"http://192.168.1.40:8000",
+    "client_name":"a",
+    "bidder_num":10000
+}
